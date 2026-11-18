@@ -1,0 +1,18 @@
+export const profile = {
+  name: "曾子健",
+  brand: "BUILDER.",
+  title: "AI Product Builder",
+  hero: "I turn complex problems into working AI products.",
+  description: "I design AI products, build full-stack systems, and turn ambiguous business problems into working workflows.",
+  descriptionZh: "从业务问题出发，设计 AI 产品，构建全栈系统，并将复杂问题转化为可执行的工作流。",
+  roles: ["AI Product Manager", "AI Full-Stack Developer", "Forward Deployed Engineer"],
+  email: null as string | null,
+  phone: null as string | null,
+  githubUrl: null as string | null,
+  resumeUrl: null as string | null,
+  about: "我关心一个需求如何变成可以运行、可以检查、可以继续改进的系统。从内容生产、业务分析到末端物流，我在个人项目中练习同一件事：先理解业务边界，再设计工作流，最后用工程证据检验实现。",
+  education: "广州软件学院 · 网络工程 · 2027 届本科（简历自述）",
+  experience: "2026.06–09 · 产品经理实习（简历来源）",
+  source: "2026-10-14 定向简历；教育与经历为个人陈述，非独立认证。",
+  reviewedAt: "2026-11-18",
+};

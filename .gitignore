@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+.vercel/
+.env*
+!.env.example
+*.tsbuildinfo
+qa/
+docs/evidence/
+docs/PORTFOLIO_CONTENT_AUDIT.md
+docs/CONTENT_PLACEHOLDERS.json
+docs/PORTFOLIO_IMPLEMENTATION_PLAN.md
+npm-debug.log*
