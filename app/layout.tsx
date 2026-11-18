@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: { default: "BUILDER. — AI Product Builder", template: "%s — BUILDER." },
   description: "曾子健的产品与工程作品集。从业务问题出发，设计 AI 产品，构建全栈系统，以证据呈现个人项目实践。",
   applicationName: "BUILDER.", robots: { index: true, follow: true },
+  alternates: origin ? { canonical: origin } : undefined,
   openGraph: { title: "BUILDER. — AI Product Builder", description: "From complex problems to working AI products. Three projects, their engineering, and the evidence behind them.", siteName: "BUILDER.", locale: "zh_CN", type: "website", ...(origin ? { url: origin } : {}) },
   twitter: { card: "summary_large_image" },
 };

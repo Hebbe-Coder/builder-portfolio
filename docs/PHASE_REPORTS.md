@@ -83,3 +83,11 @@ Dates use Asia/Shanghai. Implementation started 2026-11-18. Phase 0 raw evidence
 **Remaining:** Push accepted V2 and resolve external hosting. Resume/contact and approved project media remain publication selections, with absent links hidden.
 
 **Risks:** No live business-app validation is claimed. Single-machine mobile lab results do not cover public-network conditions or every assistive technology. Original audit, data-origin and migration caveats remain authoritative.
+
+## Phase 7 — Repository and temporary Vercel preview
+
+**Completed:** Pushed accepted V2 to the independent GitHub repository. Added a reproducible optional static-export build after anonymous Next-on-Windows symlink failure and anonymous prebuilt upload rejection. Corrected Next segment-prefetch file aliases for generic hosting. Vercel API confirmed READY, and the public tmp.now alias passed the 20-check core gate and four interaction suites. Public sitemap/robots/OG asset returned 200; sitemap and canonical use the actual public alias. Client navigation and FDE step selection had zero captured errors. A static-host header explicitly identifies the extensionless Open Graph image as PNG.
+
+**Remaining:** The anonymous deployment expires 2026-11-18 15:31:16 Asia/Shanghai unless claimed. Permanent account ownership, Git integration and lasting domain require the user to claim/sign in. No permanent production URL is claimed. The separate vercel.app alias required login, so it is not the public preview link delivered to visitors.
+
+**Evidence and operation:** DEPLOYMENT.md records the actual outcome and `npm run build:static` fallback. Standard Next build also re-passed. No business source, databases, raw audits, resumes, anonymous credentials or claim tokens were committed. Contact/resume and approved media remain absent until selected.

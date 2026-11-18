@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+export const dynamic = "force-static";
 export const alt="BUILDER. — I turn complex problems into working AI products.";
 export const size={width:1200,height:630};
 export const contentType="image/png";

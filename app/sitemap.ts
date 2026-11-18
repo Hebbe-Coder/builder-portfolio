@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+export const dynamic = "force-static";
 import { siteOrigin } from "@/lib/metadata";
 import { projects } from "@/data/projects";
 import { getInsights } from "@/lib/insights";

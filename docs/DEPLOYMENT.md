@@ -29,4 +29,12 @@ Use the prior known-good Vercel deployment or redeploy the previous Git commit. 
 
 ## Current release state
 
-Local acceptance passed; remote repository and Vercel setup are being resolved in Phase7. Final remote URLs/status are recorded here only after real tool responses and verification. No production URL is assumed from the intended project name.
+V2 accepted and pushed to `https://github.com/Hebbe-Coder/builder-portfolio`, implementation commit `6cf0af1` (later documentation/deployment follow-up commits may follow).
+
+Vercel account is not authenticated or permanently linked. Anonymous Next builder on Windows failed on a symlink privilege; prebuilt anonymous upload also rejected missing size metadata. The successful fallback uses this same site's static export, not a replacement site. `npm run build:static` generates `out/`, makes metadata routes explicitly static, and adds aliases for Next 16 segment-prefetch files on generic static hosting. The standard Next.js build remains the default and is recommended for a permanent Git-connected Vercel project.
+
+Actual anonymous deployment reached READY. Vercel returned two aliases: its `vercel.app` alias redirected to login, while **`https://instant-tin-2tpp1l3.tmp.now` is publicly accessible**. Public core acceptance passed 5 routes ×4 widths,4 interaction suites,0 failures after repairing segment aliases. It expires **2026-11-18 15:31:16 Asia/Shanghai** unless claimed. This is a temporary preview, not a durable public production domain. The claim URL is delivered directly to the user and is not committed here.
+
+To reproduce an optional static preview: set `NEXT_PUBLIC_SITE_URL` to the real origin, run `npm run build:static`, then deploy only `out/`. Without authentication, `vercel deploy out --temporary --prod --yes --no-wait --json` returns a temporary URL/claim URL. Anonymous credentials stay in ignored local `.vercel/` directories. Do not commit them. No login was performed on the user's behalf.
+
+For durable hosting, claim the deployment in the user's Vercel account and connect the GitHub repository, or import the repository as a Next.js project. Set the actual permanent origin and redeploy before sharing it as a lasting portfolio URL.

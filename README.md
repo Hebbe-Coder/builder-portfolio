@@ -30,3 +30,5 @@ V2 local acceptance:64 route/width checks plus corresponding dark-theme checks,4
 [Design system](docs/DESIGN_SYSTEM.md) · [Site architecture](docs/SITE_ARCHITECTURE.md) · [Content model](docs/CONTENT_MODEL.md) · [Content acceptance](docs/CONTENT_ACCEPTANCE.md) · [Deployment](docs/DEPLOYMENT.md)
 
 Set `NEXT_PUBLIC_SITE_URL` to the verified public origin. Vercel-provided production/deployment origins are also supported. Local builds use a local metadata base; canonical/sitemap hosts are omitted until an actual public origin is available. Rebuild after changing origins or content.
+
+Source repository: https://github.com/Hebbe-Coder/builder-portfolio. Standard Vercel hosting uses the Next.js preset. Optional `npm run build:static` creates `out/` with static-hosting segment aliases; see DEPLOYMENT.md. The initial anonymous preview is temporary and requires account claiming for durable ownership; it is not a permanent portfolio domain.
