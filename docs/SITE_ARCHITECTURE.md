@@ -4,7 +4,7 @@ Phase 1 · 2026-11-18 · Asia/Shanghai. This implementation follows the latest 1
 
 | Route | Purpose |
 | --- | --- |
-| / | Hero → Positioning → Selected Work → Capability → How I Build → Engineering Evidence → FDE Practice → About → Contact |
+| / | V2: Hero → Selected Work → How I Build → Three Ways I Work → Engineering Evidence → FDE Practice → About → Contact |
 | /projects | Three projects, category + technology + status filters |
 | /projects/hotscript | Personal AI content workbench; scoped historical V1.3 P1 validation |
 | /projects/bsc-studio | Historical PRD→SOP, separately followed by project-agent evolution |

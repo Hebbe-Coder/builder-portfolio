@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "@fontsource-variable/geist";
 import "./globals.css";
+import "./react-bits.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { siteOrigin } from "@/lib/metadata";
@@ -14,5 +15,5 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 export const viewport: Viewport = { width: "device-width", initialScale: 1, colorScheme: "light dark", themeColor: [{ media: "(prefers-color-scheme: light)", color: "#F7F7F5" }, { media: "(prefers-color-scheme: dark)", color: "#0A0A0A" }] };
-const themeScript = `(function(){try{var t=localStorage.getItem('builder-theme');document.documentElement.dataset.theme=t==='dark'||t==='light'?t:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}catch(e){}})()`;
+const themeScript = `(function(){try{var t=localStorage.getItem('builder-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light'}catch(e){document.documentElement.dataset.theme='light'}})()`;
 export default function RootLayout({ children }: { children: React.ReactNode }) { return <html lang="zh-CN" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{ __html: themeScript }}/></head><body id="top"><a className="skip-link" href="#main">Skip to content</a><Header/><main id="main">{children}</main><Footer/></body></html>; }

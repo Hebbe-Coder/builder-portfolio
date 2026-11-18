@@ -1,5 +1,7 @@
 # Content model and publication rules
 
+V2 React Bits revision: visual state lives only in components/react-bits wrappers; evidence/project data stays framework-independent. data/home.ts supplies build-loop and career-to-project mappings. Career directions are aspirations/practice scopes, not additional employment claims. No animation may change an evidence status or present generated application UI as a screenshot. Existing models and nullable publication rules remain authoritative.
+
 Phase 1 · 2026-11-18 · Asia/Shanghai.
 
 `types/content.ts` defines Project, Evidence, Media and Evolution. `data/projects.ts` contains three cases; `data/evidence.ts` holds scoped records; `data/profile.ts` owns public identity and nullable contact URLs; `data/capabilities.ts` maps engineering to project proof; `data/navigation.ts` owns navigation. Notes live in `content/insights/*.mdx` with frontmatter and a project source scope.

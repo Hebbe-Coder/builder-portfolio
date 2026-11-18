@@ -20,7 +20,17 @@ Header, mobile navigation, theme control, footer, section heading, text link, pr
 
 ## Interaction and access
 
-Breakpoints: 640, 768, 1024, 1280px. Tap targets ≥44px; visible keyboard focus; skip link; semantic headings and landmarks. Theme respects system preference until explicitly changed and persists locally. Mobile navigation supports Escape and closes on navigation. Framer Motion provides one restrained page entry; reduced-motion disables movement. No animation gates content visibility.
+Breakpoints: 640, 768, 1024, 1280px. Tap targets ≥44px; visible keyboard focus; skip link; semantic headings and landmarks. Theme defaults to light; explicit dark preference persists locally. Mobile navigation supports Escape and closes on navigation. React Bits wrappers provide selective interaction; reduced-motion disables movement. No animation gates content visibility.
+
+## React Bits V2 revision
+
+The latest brief supersedes the original homepage composition: Hero → Selected Work → How I Build → Three Ways I Work → Engineering Evidence → FDE Practice → About → Contact. Hero uses left narrative and right interactive discipline diagram. Default theme is light; explicit dark preference persists. Sticky navigation becomes lightly blurred only after scroll. No canvas/WebGL background is necessary.
+
+Official React Bits components are pinned, licensed and isolated under components/react-bits/vendor. Business wrappers own adaptive behavior and tokens. BlurText introduces the key phrase once; RotatingText connects career directions to visible project evidence with pause control; SpotlightCard provides shared pointer/focus emphasis; AnimatedList exposes build stages and capability-to-project mappings. Every essential fact remains readable without hovering or animation.
+
+Homepage visible effect budget: two hero text effects, three project spotlights, one build-list interaction, one capability-list interaction and one navigation scroll state = eight. Project details ≤four, engineering ≤five, FDE ≤five, articles ≤two. Mobile/reduced-motion use static text, no pointer tracking, no auto rotation and no entrance blur. Rotation pauses offscreen and when the document is hidden. Sources and local adaptations are recorded in REACT_BITS.md.
+
+Evidence tokens: verified green, implemented blue, simulated ochre, historical gray, unverified orange and planned purple; dark variants preserve contrast. Text labels and symbols always accompany color.
 
 ## Verification
 

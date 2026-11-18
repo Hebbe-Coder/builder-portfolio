@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { getProject, projects } from "@/data/projects";
@@ -6,6 +6,7 @@ import { getEvidence } from "@/data/evidence";
 import { projectSections } from "@/data/navigation";
 import { Architecture, Badge, EvidenceCard, Eyebrow, ProjectVisual, TextLink, Workflow } from "@/components/ui";
 import { ProjectMedia } from "@/components/project-media";
+import { RevealText } from "@/components/react-bits/TextEffects";
 import { pageMetadata, siteOrigin } from "@/lib/metadata";
 export const dynamicParams = false;
 export function generateStaticParams() { return projects.map(p => ({slug:p.slug})); }
@@ -16,7 +17,7 @@ export default async function ProjectPage({params}:{params:Promise<{slug:string}
   const next = projects[(projects.indexOf(project)+1)%projects.length]; const origin = siteOrigin();
   return <div className="shell case-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"CreativeWork",name:project.title,description:project.description,author:{"@type":"Person",name:"曾子健"},...(origin?{url:`${origin}/projects/${project.slug}`}:{})}).replace(/</g,"\\u003c")}}/>
-    <section className="case-hero"><Link className="back-link" href="/projects"><ArrowLeft size={15}/>All projects</Link><div className="case-title-meta"><Eyebrow>PROJECT {project.number} / CASE STUDY</Eyebrow><span className="project-status"><span/>{project.status}</span></div><h1>{project.title}<span className="accent">.</span></h1><p className="case-subtitle">{project.subtitle}</p>{project.id === "bsc-studio" && <p className="muted">AI Business Analysis & Project Agent Workspace</p>}<div className="case-meta"><div><span className="eyebrow">ROLE / PRACTICE</span><p>{project.role}</p></div><div><span className="eyebrow">DISPLAY SCOPE</span><p>{project.displayVersion}</p></div><div><span className="eyebrow">DISCIPLINES</span><p>{project.category.filter(c=>c!=="FDE Practice").join(" · ")}</p></div></div><ProjectVisual project={project}/></section>
+    <section className="case-hero"><Link className="back-link" href="/projects"><ArrowLeft size={15}/>All projects</Link><div className="case-title-meta"><Eyebrow>PROJECT {project.number} / CASE STUDY</Eyebrow><span className="project-status"><span/>{project.status}</span></div><h1><RevealText text={project.title}/><span className="accent">.</span></h1><p className="case-subtitle">{project.subtitle}</p>{project.id === "bsc-studio" && <p className="muted">AI Business Analysis & Project Agent Workspace</p>}<div className="case-meta"><div><span className="eyebrow">ROLE / PRACTICE</span><p>{project.role}</p></div><div><span className="eyebrow">DISPLAY SCOPE</span><p>{project.displayVersion}</p></div><div><span className="eyebrow">DISCIPLINES</span><p>{project.category.filter(c=>c!=="FDE Practice").join(" · ")}</p></div></div><ProjectVisual project={project}/></section>
     <div className="case-layout"><aside className="case-nav"><p className="eyebrow">IN THIS CASE</p><nav aria-label="Case study sections">{projectSections.map((section,i)=><a key={section} href={`#${section.toLowerCase().replaceAll(" ","-")}`}><span className="mono">{String(i+1).padStart(2,"0")}</span>{section}</a>)}</nav></aside><div className="case-content">
       <CaseSection title="Overview"><h2>{project.positioning}</h2><p className="lead">{project.description}</p><p className="scope-note">展示范围：{project.displayVersion}。素材采用架构与流程示意；未发布未经确认的系统截图。</p><ProjectMedia project={project}/></CaseSection>
       <CaseSection title="Context"><h2>The context around the work.</h2><p>{project.context}</p></CaseSection>

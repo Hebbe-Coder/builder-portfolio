@@ -6,11 +6,11 @@ An editorial portfolio for 曾子健, AI Product Builder. Three source-grounded 
 
 Node.js24 LTS, npm11. Use `npm ci`, then `npm run dev`. Local preview uses http://127.0.0.1:3100. For production: `npm run build`, then `npm start`.
 
-Next.js App Router / React / strict TypeScript / Tailwind4 / Framer Motion / Lucide / local MDX. Geist is self-hosted; no remote font fetch. No AI provider, business database, tracking service or contact-form backend is required.
+Next.js App Router / React / strict TypeScript / Tailwind4 / official React Bits source / Framer Motion / Lucide / local MDX. Geist is self-hosted; no remote font fetch. No AI provider, business database, tracking service or contact-form backend is required. Light is the default; dark is an explicit persisted choice.
 
 ## Content
 
-- `/`: positioning, selected work, capability, method, evidence, FDE, about and contact.
+- `/`: hero, selected work, How I Build, Three Ways I Work, evidence, FDE, about and contact.
 - `/projects`: category/technology/status filters and three twelve-section cases.
 - `/engineering`, `/fde`, `/about`: evidence-based capability and practice.
 - `/insights`: seven source-scoped MDX notes, contents, code copy and reading progress.
@@ -23,7 +23,7 @@ The portfolio is an independent presentation layer. It does not contain HotScrip
 
 `npm run typecheck`, `npm run lint`, `npm run test:content`, `npm run build`. Run the production server, then `npm run test:browser` (installed Microsoft Edge required) and `node scripts/lighthouse.mjs`. QA artifacts are local under ignored `qa/`.
 
-Local acceptance:64 route/width checks plus corresponding dark-theme checks,4 interaction suites and114 internal links/anchors passed. Lighthouse mobile simulation for10 representative routes: Performance90–99, Accessibility100, Best Practices100, SEO100. This is local lab evidence, not public-network field data. See [QA report](docs/QA_REPORT.md) and [phase reports](docs/PHASE_REPORTS.md).
+V2 local acceptance:64 route/width checks plus corresponding dark-theme checks,4 interaction suites and117 internal links/anchors passed. Eight additional normal/reduced-motion combinations cover React Bits career, build and FDE interactions; run `node scripts/react-bits-qa.mjs`. Lighthouse mobile simulation for10 representative routes: all four categories100 in this run. Mobile uses static alternatives; these are local lab results, not desktop animation or public-network field data. See [QA report](docs/QA_REPORT.md), [React Bits integration](docs/REACT_BITS.md) and [phase reports](docs/PHASE_REPORTS.md).
 
 ## Maintain and deploy
 

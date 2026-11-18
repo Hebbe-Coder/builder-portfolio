@@ -1,0 +1,25 @@
+{
+  "commit": "d01aa914dcbe76da8b2923ebf872b5c8b1066e4c",
+  "sources": [
+    {
+      "name": "BlurText",
+      "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/d01aa914dcbe76da8b2923ebf872b5c8b1066e4c/src/ts-tailwind/TextAnimations/BlurText/BlurText.tsx",
+      "sha256": "f59bfddeb51cb56df86498a55ae395d3bd4297b1de869310b38b290b9eef7116"
+    },
+    {
+      "name": "RotatingText",
+      "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/d01aa914dcbe76da8b2923ebf872b5c8b1066e4c/src/ts-tailwind/TextAnimations/RotatingText/RotatingText.tsx",
+      "sha256": "4c2708abce2ca50ba46a901c1198033a8bc52377dedaa2679aa02fbdd83c0777"
+    },
+    {
+      "name": "SpotlightCard",
+      "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/d01aa914dcbe76da8b2923ebf872b5c8b1066e4c/src/ts-tailwind/Components/SpotlightCard/SpotlightCard.tsx",
+      "sha256": "f7b64189ce3c018e5f54103bdf16b3e5f0c97f4a0dba9f6cd62d8793580b8c72"
+    },
+    {
+      "name": "AnimatedList",
+      "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/d01aa914dcbe76da8b2923ebf872b5c8b1066e4c/src/ts-tailwind/Components/AnimatedList/AnimatedList.tsx",
+      "sha256": "7948188bbee21d87c796bcbab0b6948fcab43521df928d09fecd9ab59fa6c869"
+    }
+  ]
+}

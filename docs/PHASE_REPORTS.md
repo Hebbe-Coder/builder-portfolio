@@ -73,3 +73,13 @@ Dates use Asia/Shanghai. Implementation started 2026-11-18. Phase 0 raw evidence
 **Risks:** Lab scores fluctuate; automated accessibility cannot prove every assistive-technology experience. Website QA does not revalidate business systems.
 
 **Next:** Independent GitHub repository, push, Vercel deployment and public verification.
+
+## React Bits V2 — Design, Home gate and site acceptance
+
+**Completed:** Adapted the existing implementation to the new brief. Pinned four official React Bits sources with full license/provenance; isolated adaptive wrappers; default light; new split hero, immediate selected work, six-stage build loop, evidence-linked work modes and three FDE entries. Home gate passed before changing secondary pages. Project titles and cards now share wrappers, evidence uses six labelled semantic colors, FDE has seven selectable stages with five content fields, About follows learning/career/project/engineering/next-work direction. Articles remain minimal.
+
+**Evidence:** Type/lint/49-file content guard/build passed. 64 light route checks plus dark matrix, four interaction suites, 117 links/anchors, zero failures. Eight production normal/reduced-motion combinations passed additional React Bits/FDE tests. Visual review corrected a selected-list overlay. Ten freshly measured Lighthouse mobile routes each scored 100 in all four categories; see QA_REPORT.md for scope and limitations.
+
+**Remaining:** Push accepted V2 and resolve external hosting. Resume/contact and approved project media remain publication selections, with absent links hidden.
+
+**Risks:** No live business-app validation is claimed. Single-machine mobile lab results do not cover public-network conditions or every assistive technology. Original audit, data-origin and migration caveats remain authoritative.
